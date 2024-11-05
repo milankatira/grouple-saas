@@ -13,16 +13,16 @@ export const onGetStripeClientSecret = async () => {
         const paymentIntent = await stripe.paymentIntents.create({
             currency: "usd",
             amount: 9900,
-            description:"Software development services",
-            shipping:{
-              "name": "Jenny Rosen",
-              "address": {
-                "line1": "510 Townsend St",
-                "postal_code": "98140",
-                "city": "San Francisco",
-                "state": "CA",
-                "country": "US",
-              },
+            description: "Software development services",
+            shipping: {
+                name: "Jenny Rosen",
+                address: {
+                    line1: "510 Townsend St",
+                    postal_code: "98140",
+                    city: "San Francisco",
+                    state: "CA",
+                    country: "US",
+                },
             },
             automatic_payment_methods: {
                 enabled: true,
@@ -97,16 +97,16 @@ export const onGetGroupSubscriptionPaymentIntent = async (groupid: string) => {
             const paymentIntent = await stripe.paymentIntents.create({
                 currency: "usd",
                 amount: price.price * 100,
-                description:"Software development services",
-                shipping:{
-                  "name": "Jenny Rosen",
-                  "address": {
-                    "line1": "510 Townsend St",
-                    "postal_code": "98140",
-                    "city": "San Francisco",
-                    "state": "CA",
-                    "country": "US",
-                  },
+                description: "Software development services",
+                shipping: {
+                    name: "Jenny Rosen",
+                    address: {
+                        line1: "510 Townsend St",
+                        postal_code: "98140",
+                        city: "San Francisco",
+                        state: "CA",
+                        country: "US",
+                    },
                 },
                 automatic_payment_methods: {
                     enabled: true,
