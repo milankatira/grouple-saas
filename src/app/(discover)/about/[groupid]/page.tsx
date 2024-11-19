@@ -1,6 +1,6 @@
-import { onAuthenticatedUser } from "@/actions/auth"
-import { onGetGroupInfo } from "@/actions/groups"
-import { onGetActiveSubscription } from "@/actions/payments"
+import { onAuthenticatedUser } from "@/action/auth"
+import { onGetGroupInfo } from "@/action/groups"
+import { onGetActiveSubscription } from "@/action/payments"
 import {
     HydrationBoundary,
     QueryClient,

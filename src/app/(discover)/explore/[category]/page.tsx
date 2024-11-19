@@ -1,4 +1,4 @@
-import { onGetExploreGroup } from "@/actions/groups"
+import { onGetExploreGroup } from "@/action/groups"
 import {
     dehydrate,
     HydrationBoundary,

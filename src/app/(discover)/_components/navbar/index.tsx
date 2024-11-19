@@ -1,5 +1,5 @@
-import { onAuthenticatedUser } from "@/actions/auth"
-import { onGetUserGroups } from "@/actions/groups"
+import { onAuthenticatedUser } from "@/action/auth"
+import { onGetUserGroups } from "@/action/groups"
 
 import GlassSheet from "@/components/global/glass-sheet"
 import { UserWidget } from "@/components/global/user-widget"

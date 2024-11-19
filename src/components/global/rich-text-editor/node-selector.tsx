@@ -71,6 +71,21 @@ const items: SelectorItem[] = [
         isActive: (editor: any) => editor.isActive("taskItem"),
     },
     {
+        name: "To-do List2",
+        icon: CheckSquare,
+        command: (editor: any) => {
+            console.log("To-do List command triggered")
+            if (editor) {
+                editor.chain().focus().toggleTaskList().run()
+            }
+        },
+        isActive: (editor: any) => {
+            const active = editor.isActive("taskList")
+            console.log("Is To-do List active?", active)
+            return active
+        },
+    },
+    {
         name: "Bullet List",
         icon: ListOrdered,
         command: (editor: any) =>

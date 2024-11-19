@@ -1,4 +1,4 @@
-import { onAuthenticatedUser } from "@/actions/auth"
+import { onAuthenticatedUser } from "@/action/auth"
 import BackdropGradient from "@/components/global/backdrop-gradient"
 import GradientText from "@/components/global/gradient-text"
 
